@@ -42,7 +42,7 @@ namespace EjemploHerencia1
             string cadena = "Datos animal\n";
             cadena += $"Especie: {Nombre}\n";
             cadena += $"Hábitat: {Habitat}\n";
-            cadena += $"Alimentación: {tipoAlimentacion}";
+            cadena += $"Alimentación: {tipoAlimentacion()}";
             return cadena;
         }
     }
