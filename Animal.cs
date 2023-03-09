@@ -36,5 +36,14 @@ namespace EjemploHerencia1
         {
             return _alimentacion;
         }
+
+        public override string ToString()
+        {
+            string cadena = "Datos animal\n";
+            cadena += $"Especie: {Nombre}\n";
+            cadena += $"Hábitat: {Habitat}\n";
+            cadena += $"Alimentación: {tipoAlimentacion}";
+            return cadena;
+        }
     }
 }
