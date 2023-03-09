@@ -12,6 +12,7 @@ namespace EjemploHerencia1
         protected string _alimentacion = "Comida";
         protected string _nombre;
         protected string _habitat;
+        protected float _tiempoVida;
 
         public virtual string Nombre
         {
@@ -29,6 +30,16 @@ namespace EjemploHerencia1
             set
             {
                 _habitat = value;
+            }
+        }
+
+        public virtual float TiempoDeVida
+        {
+            get { return _tiempoVida; }
+            set
+            {
+                if (value < 0) throw new Exception("Error: valor no posible");
+                _tiempoVida = value;
             }
         }
 
