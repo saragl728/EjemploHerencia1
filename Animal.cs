@@ -11,6 +11,7 @@ namespace EjemploHerencia1
         private const int TAM_NOMBRE = 20; 
         protected string _alimentacion = "Comida";
         protected string _nombre;
+        protected string _habitat;
 
         public virtual string Nombre
         {
@@ -19,6 +20,15 @@ namespace EjemploHerencia1
             {
                 if (value.Length > TAM_NOMBRE) throw new Exception("El nombre es demasiado largo");
                 _nombre = value;
+            }
+        }
+
+        public virtual string Habitat
+        {
+            get { return _alimentacion ; }
+            set
+            {
+                _habitat = value;
             }
         }
 
