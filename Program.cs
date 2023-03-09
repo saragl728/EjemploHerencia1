@@ -23,6 +23,8 @@
             Console.WriteLine(animal1.Nombre);
             Console.WriteLine(mamifero1.Nombre);
             Console.WriteLine(pajaro.Nombre);
+
+            Console.WriteLine(animal1.ToString());
         }
     }
 }
