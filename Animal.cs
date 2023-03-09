@@ -25,7 +25,7 @@ namespace EjemploHerencia1
 
         public virtual string Habitat
         {
-            get { return _alimentacion ; }
+            get { return _habitat ; }
             set
             {
                 _habitat = value;
